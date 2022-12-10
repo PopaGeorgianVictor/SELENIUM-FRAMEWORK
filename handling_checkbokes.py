@@ -37,3 +37,7 @@ class Checkbox(unittest.TestCase):
                 print(f"Checkbox with value '{value}' is selectable")
             else:
                 raise Exception(f"Value '{value}' is not selectable")
+
+
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
