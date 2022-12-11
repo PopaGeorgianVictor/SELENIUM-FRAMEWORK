@@ -1,4 +1,4 @@
-import time
+
 import unittest
 import HTMLTestRunner
 from selenium.webdriver.common.by import By
