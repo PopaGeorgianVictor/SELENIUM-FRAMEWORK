@@ -2,7 +2,6 @@
 import unittest
 import HTMLTestRunner
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
@@ -32,3 +31,11 @@ class Radios(unittest.TestCase):
         assert len(all_radios) == len(expected_values), "the number of radios does not match the expected." \
                                                         "Expected: {}, Actual: {}".format(len(expected_values),
                                                                                           len(all_radios))
+
+
+
+
+
+
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
