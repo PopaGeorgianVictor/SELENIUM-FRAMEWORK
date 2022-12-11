@@ -1807,3 +1807,101 @@ JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FA
 JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
 JavaScript error: , line 0: uncaught exception: No tcf-api
 1670773972201	Marionette	INFO	Stopped listening on port 7634
+1670774104534	geckodriver	INFO	Listening on 127.0.0.1:7745
+1670774107580	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "7746" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile7noESx"
+1670774107987	Marionette	INFO	Marionette enabled
+1670774107993	Marionette	INFO	Listening on port 7755
+Read port: 7755
+WebDriver BiDi listening on ws://127.0.0.1:7746
+1670774108096	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile7noESx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:7746/devtools/browser/83798823-5f72-4872-b33c-48d3bccc1315
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1670774158548	Marionette	INFO	Stopped listening on port 7755
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1670774160738	geckodriver	INFO	Listening on 127.0.0.1:7855
+1670774286017	geckodriver	INFO	Listening on 127.0.0.1:7999
+1670774289036	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8000" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilef3N9nz"
+1670774289491	Marionette	INFO	Marionette enabled
+1670774289497	Marionette	INFO	Listening on port 8009
+WebDriver BiDi listening on ws://127.0.0.1:8000
+Read port: 8009
+1670774290129	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilef3N9nz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8000/devtools/browser/129675bd-bb43-40b8-bbd6-7fe237c0432c
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1670774357481	Marionette	INFO	Stopped listening on port 8009
+1670774360109	geckodriver	INFO	Listening on 127.0.0.1:8106
+1670774363135	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8107" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile9yYGuN"
+1670774363547	Marionette	INFO	Marionette enabled
+1670774363552	Marionette	INFO	Listening on port 8116
+Read port: 8116
+WebDriver BiDi listening on ws://127.0.0.1:8107
+1670774363649	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile9yYGuN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8107/devtools/browser/c806cd47-9bf8-4a2e-9026-1cb23e4d471e
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1670774494440	Marionette	INFO	Stopped listening on port 8116
+1670774496966	geckodriver	INFO	Listening on 127.0.0.1:8217
+1670774499984	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8218" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileYpJuJy"
+1670774500405	Marionette	INFO	Marionette enabled
+1670774500410	Marionette	INFO	Listening on port 8227
+Read port: 8227
+WebDriver BiDi listening on ws://127.0.0.1:8218
+1670774500504	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileYpJuJy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8218/devtools/browser/783c5df3-4f9e-41bb-8195-5b13e62dbfc6
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1670774567716	Marionette	INFO	Stopped listening on port 8227
+1670777476283	geckodriver	INFO	Listening on 127.0.0.1:8348
+1670777479301	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8349" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilemPUOmz"
+1670777479710	Marionette	INFO	Marionette enabled
+1670777479715	Marionette	INFO	Listening on port 8358
+Read port: 8358
+WebDriver BiDi listening on ws://127.0.0.1:8349
+1670777479813	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilemPUOmz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8349/devtools/browser/09c05c25-60c1-4044-92da-19de7f2fd838
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1670777493713	Marionette	INFO	Stopped listening on port 8358
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1670777495965	geckodriver	INFO	Listening on 127.0.0.1:8449
+1670777498986	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8450" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileTVZvpd"
+1670777499400	Marionette	INFO	Marionette enabled
+1670777499406	Marionette	INFO	Listening on port 8459
+Read port: 8459
+WebDriver BiDi listening on ws://127.0.0.1:8450
+1670777499532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileTVZvpd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8450/devtools/browser/ed34a2ed-3ddd-4963-a67e-a012d381da60
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1670777512380	Marionette	INFO	Stopped listening on port 8459
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 12716, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670777514314	geckodriver	INFO	Listening on 127.0.0.1:8547
+1670777517359	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8548" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileJOIa3e"
+1670777517783	Marionette	INFO	Marionette enabled
+1670777517788	Marionette	INFO	Listening on port 8557
+Read port: 8557
+WebDriver BiDi listening on ws://127.0.0.1:8548
+1670777517892	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileJOIa3e\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8548/devtools/browser/84e90740-3631-4a7f-8ff5-e38f46fc2419
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1670777527203	Marionette	INFO	Stopped listening on port 8557
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
