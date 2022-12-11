@@ -1905,3 +1905,25 @@ JavaScript error: https://www.javatpoint.com/python-tutorial, line 1927: TypeErr
 JavaScript error: , line 0: uncaught exception: No tcf-api
 1670777527203	Marionette	INFO	Stopped listening on port 8557
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1670778288254	geckodriver	INFO	Listening on 127.0.0.1:8888
+1670778291273	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8889" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile9FoiKA"
+1670778291858	Marionette	INFO	Marionette enabled
+1670778291863	Marionette	INFO	Listening on port 8898
+WebDriver BiDi listening on ws://127.0.0.1:8889
+Read port: 8898
+1670778292848	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile9FoiKA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8889/devtools/browser/3270dfbe-b963-4d0e-982d-b0a09d27185a
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670778296784	Marionette	INFO	Stopped listening on port 8898
+1670778326957	geckodriver	INFO	Listening on 127.0.0.1:8930
+1670778329984	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8931" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileTaGGMb"
+1670778331291	Marionette	INFO	Marionette enabled
+1670778331299	Marionette	INFO	Listening on port 8940
+Read port: 8940
+WebDriver BiDi listening on ws://127.0.0.1:8931
+1670778331435	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileTaGGMb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8931/devtools/browser/34083fad-0b47-481a-bb6e-8761cf0fab28
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670778334920	Marionette	INFO	Stopped listening on port 8940
