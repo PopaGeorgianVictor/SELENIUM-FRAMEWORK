@@ -1101,3 +1101,61 @@ DevTools listening on ws://127.0.0.1:53008/devtools/browser/e38d880e-87c0-407d-a
 JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
 1670692171039	Marionette	INFO	Stopped listening on port 53017
 [Parent 1604, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670747740917	geckodriver	INFO	Listening on 127.0.0.1:5475
+1670747743919	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5476" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileABaKkX"
+1670747745907	Marionette	INFO	Marionette enabled
+1670747745921	Marionette	INFO	Listening on port 5485
+Read port: 5485
+WebDriver BiDi listening on ws://127.0.0.1:5476
+1670747746847	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileABaKkX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5476/devtools/browser/36ab8825-7794-4bb2-804e-7dfb2e7fac4a
+1670748084294	Marionette	INFO	Stopped listening on port 5485
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 6468, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670748450212	geckodriver	INFO	Listening on 127.0.0.1:5938
+1670748453237	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5939" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileuCrRyk"
+1670748453679	Marionette	INFO	Marionette enabled
+1670748453684	Marionette	INFO	Listening on port 5948
+Read port: 5948
+WebDriver BiDi listening on ws://127.0.0.1:5939
+1670748453780	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileuCrRyk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5939/devtools/browser/6efbf39e-b810-45af-b109-5df332092d6e
+1670748471260	Marionette	INFO	Stopped listening on port 5948
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1670748506196	geckodriver	INFO	Listening on 127.0.0.1:5978
+1670748509215	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5979" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilenfkycC"
+1670748510625	Marionette	INFO	Marionette enabled
+1670748510629	Marionette	INFO	Listening on port 5988
+Read port: 5988
+WebDriver BiDi listening on ws://127.0.0.1:5979
+1670748510724	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilenfkycC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5979/devtools/browser/73a73326-963b-47ac-8989-d5a88547f597
+1670748524481	Marionette	INFO	Stopped listening on port 5988
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1670748696611	geckodriver	INFO	Listening on 127.0.0.1:6023
+1670748699634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6024" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilefXNZ01"
+1670748700187	Marionette	INFO	Marionette enabled
+1670748700192	Marionette	INFO	Listening on port 6033
+Read port: 6033
+WebDriver BiDi listening on ws://127.0.0.1:6024
+1670748700308	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilefXNZ01\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:6024/devtools/browser/81cf2524-da88-44a0-9639-423e7c01c2cd
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670748703975	Marionette	INFO	Stopped listening on port 6033
+[Parent 18256, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670748743334	geckodriver	INFO	Listening on 127.0.0.1:6065
+1670748746371	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6066" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofiley8GiEp"
+1670748746781	Marionette	INFO	Marionette enabled
+1670748746785	Marionette	INFO	Listening on port 6075
+Read port: 6075
+WebDriver BiDi listening on ws://127.0.0.1:6066
+1670748746884	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofiley8GiEp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:6066/devtools/browser/378cd0c4-f1e8-4d4b-9c1d-64ed2f328f25
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670748754428	Marionette	INFO	Stopped listening on port 6075
+!!! error running onStopped callback: TypeError: callback is not a function
