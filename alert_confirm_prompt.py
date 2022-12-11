@@ -30,7 +30,7 @@ class Alerts(unittest.TestCase):
         expected_text = "This is alert using just html."
         assert html_alert_text == expected_text, f"Error: expected: {expected_text}, actual: {html_alert_text}"
 
-    def test_js_alert_acccept(self):
+    def test_js_alert_accept(self):
         self.driver.find_element(*self.JS_ALERT).click()
         js_alert = self.driver.switch_to.alert
         js_alert.accept()
