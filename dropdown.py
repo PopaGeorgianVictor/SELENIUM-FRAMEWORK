@@ -10,7 +10,6 @@ from selenium.webdriver.firefox.service import Service
 
 class Dropdown(unittest.TestCase):
     dropdown_class = (By.ID, 'coding-language-select')
-    all_option_class = (By.NAME, 'coding-language')
     dropdown_css = (By.ID, "dropdownMenuButton")
     option_css = (By.XPATH, '//*[@id="dropdowns"]/div[2]/div/ul/li[4]/a')
 
@@ -29,11 +28,18 @@ class Dropdown(unittest.TestCase):
         dropdown_object.select_by_value('Python')
 
     def test_class_all_option(self):
-        options = self.driver.find_elements(*self.all_option_class)
+        options = self.driver.find_elements(*self.dropdown_class)
         for option in options:
             print(option.text)
+
 
     def test_select_using_css(self):
         self.driver.find_element(*self.dropdown_css).click()
         self.driver.find_element(*self.option_css).click()
+
+    def test_css_all_option(self):
+        options = self.driver.find_elements(*self.dropdown_css)
+        for option in options:
+            print(option.text)
+
 
