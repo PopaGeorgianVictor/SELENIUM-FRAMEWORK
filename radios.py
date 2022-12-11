@@ -9,8 +9,8 @@ from selenium.webdriver.firefox.service import Service
 
 
 class Radios(unittest.TestCase):
-    locator_by_value = 'input[name="radio-stations"][value="{value}"]'
-    radios = (By.NAME, 'radio-stations')
+    LOCATOR_BY_VALUE = 'input[name="radio-stations"][value="{value}"]'
+    RADIOS = (By.NAME, 'radio-stations')
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -23,12 +23,12 @@ class Radios(unittest.TestCase):
 
     def test_default_is_selected(self):
         expected_default_value = 'rock fm'
-        default_element = self.driver.find_element(By.CSS_SELECTOR, self.locator_by_value.format(value=expected_default_value))
+        default_element = self.driver.find_element(By.CSS_SELECTOR, self.LOCATOR_BY_VALUE.format(value=expected_default_value))
         assert default_element.is_selected(), f"The default value of {expected_default_value} is not selected."
 
     def test_verify_number_of_radio_btn(self):
-        expected_values = ['magic fm', 'radio galaxy', 'europa fm', 'rock fm']
-        all_radios = self.driver.find_element(*self.radios)
+        expected_values = ['21-40', '41-60', '61-80', '81+']
+        all_radios = self.driver.find_elements(*self.RADIOS)
         assert len(all_radios) == len(expected_values), "the number of radios does not match the expected." \
                                                         "Expected: {}, Actual: {}".format(len(expected_values),
                                                                                           len(all_radios))

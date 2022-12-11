@@ -1581,3 +1581,25 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:8149/devtools/browser/85fdfb48-b2c5-4dfa-b205-b5ea97ab5b89
 JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
 1670763435986	Marionette	INFO	Stopped listening on port 8158
+1670763603305	geckodriver	INFO	Listening on 127.0.0.1:8188
+1670763606330	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8189" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile5nOqf2"
+1670763606734	Marionette	INFO	Marionette enabled
+1670763606739	Marionette	INFO	Listening on port 8198
+Read port: 8198
+WebDriver BiDi listening on ws://127.0.0.1:8189
+1670763606835	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofile5nOqf2\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8189/devtools/browser/05eb31a1-7bee-422c-ba9e-3b1ae33811da
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670763609937	Marionette	INFO	Stopped listening on port 8198
+1670763695802	geckodriver	INFO	Listening on 127.0.0.1:8226
+1670763698831	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8227" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilej9tA4D"
+1670763699234	Marionette	INFO	Marionette enabled
+1670763699239	Marionette	INFO	Listening on port 8236
+Read port: 8236
+WebDriver BiDi listening on ws://127.0.0.1:8227
+1670763699341	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilej9tA4D\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8227/devtools/browser/c4c887ec-8d7a-4e53-ac58-c8b37a0d402b
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670763702257	Marionette	INFO	Stopped listening on port 8236
