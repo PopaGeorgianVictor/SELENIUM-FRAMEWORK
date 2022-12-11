@@ -10,6 +10,7 @@ from selenium.webdriver.firefox.service import Service
 
 class Dropdown(unittest.TestCase):
     dropdown_class = (By.ID, 'coding-language-select')
+    all_option_class = (By.NAME, 'coding-language')
     dropdown_css = (By.ID, "dropdownMenuButton")
 
     def setUp(self) -> None:
@@ -26,5 +27,6 @@ class Dropdown(unittest.TestCase):
         dropdown_object = Select(my_dropdown)
         dropdown_object.select_by_value('Python')
 
+    def test_class_all_option(self):
 
 
