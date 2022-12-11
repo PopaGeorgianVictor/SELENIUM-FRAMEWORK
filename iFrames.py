@@ -8,7 +8,9 @@ from selenium.webdriver.firefox.service import Service
 
 class Frames(unittest.TestCase):
     WITHOUT_FRAME = (By.ID, 'btnOutFrame')
-    OF_FRAME =
+    OF_FRAME = (By.CSS_SELECTOR, "div[id='link'] li:nth-child(1) a:nth-child(1)")
+    FRAMES = (By.TAG_NAME,'iframe')
+
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -23,8 +25,18 @@ class Frames(unittest.TestCase):
         self.driver.find_element(*self.WITHOUT_FRAME).click()
         alert = self.driver.switch_to.alert
         assert alert.text == 'Just Clicked Outside iFrame', "Should've gotten outside message"
-        alert.dismiss()
+        alert.accept()
 
     def test_of_iFrame(self):
+        self.driver.switch_to.frame('myFrame1')
+        self.driver.find_element(*self.OF_FRAME).click()
+        print('I clicked in frame')
+
+    def test_len_frames(self):
+        frames = self.driver.find_elements(*self.FRAMES)
+        for frame in frames:
+            print(frame.get_attribute("id"))
+        print(len(frames))
+
 
 
