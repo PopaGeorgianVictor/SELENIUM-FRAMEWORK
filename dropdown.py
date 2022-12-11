@@ -9,9 +9,9 @@ from selenium.webdriver.firefox.service import Service
 
 
 class Dropdown(unittest.TestCase):
-    dropdown_class = (By.ID, 'coding-language-select')
-    dropdown_css = (By.ID, "dropdownMenuButton")
-    option_css = (By.XPATH, '//*[@id="dropdowns"]/div[2]/div/ul/li[4]/a')
+    DROPDOWN_CLASS= (By.ID, 'coding-language-select')
+    DROPDOWN_CSS = (By.ID, "dropdownMenuButton")
+    OPTION_CSS = (By.XPATH, '//*[@id="dropdowns"]/div[2]/div/ul/li[4]/a')
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -23,22 +23,22 @@ class Dropdown(unittest.TestCase):
         self.driver.quit()
 
     def test_select_using_class(self):
-        my_dropdown = self.driver.find_element(*self.dropdown_class)
+        my_dropdown = self.driver.find_element(*self.DROPDOWN_CLASS)
         dropdown_object = Select(my_dropdown)
         dropdown_object.select_by_value('Python')
 
     def test_class_all_option(self):
-        options = self.driver.find_elements(*self.dropdown_class)
+        options = self.driver.find_elements(*self.DROPDOWN_CLASS)
         for option in options:
             print(option.text)
 
 
     def test_select_using_css(self):
-        self.driver.find_element(*self.dropdown_css).click()
-        self.driver.find_element(*self.option_css).click()
+        self.driver.find_element(*self.DROPDOWN_CSS).click()
+        self.driver.find_element(*self.OPTION_CSS).click()
 
     def test_css_all_option(self):
-        options = self.driver.find_elements(*self.dropdown_css)
+        options = self.driver.find_elements(*self.DROPDOWN_CSS)
         for option in options:
             print(option.text)
 
