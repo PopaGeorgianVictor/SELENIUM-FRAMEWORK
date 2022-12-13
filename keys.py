@@ -34,3 +34,5 @@ class Keyboard(unittest.TestCase):
         password.send_keys("###hacking###")
 
 
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))

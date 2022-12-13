@@ -1980,3 +1980,15 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 1670935344687	Marionette	INFO	Stopped listening on port 44297
 JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
 JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 997: Error: Connection is not open.
+1670935416793	geckodriver	INFO	Listening on 127.0.0.1:44335
+1670935419817	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "44336" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileDFO3cF"
+1670935420218	Marionette	INFO	Marionette enabled
+1670935420223	Marionette	INFO	Listening on port 44345
+Read port: 44345
+WebDriver BiDi listening on ws://127.0.0.1:44336
+1670935420315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileDFO3cF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44336/devtools/browser/1f86ee88-ea59-4b57-8773-86716d6a924c
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670935424081	Marionette	INFO	Stopped listening on port 44345
