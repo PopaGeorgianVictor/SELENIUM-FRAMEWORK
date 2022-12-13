@@ -12,12 +12,21 @@ class Keyboard(unittest.TestCase):
     PASSWORD = (By.ID, "logPassword")
 
     def setUp(self) -> None:
-        self.chrome = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
-        self.chrome.maximize_window()
-        self.chrome.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/login_sign_up")
-        self.chrome.implicitly_wait(2)
+        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver.maximize_window()
+        self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/login_sign_up")
+        self.driver.implicitly_wait(2)
 
     def tearDown(self) -> None:
-        self.chrome.quit()
+        self.driver.quit()
 
     def test_keys(self):
+        user = self.driver.find_element(*self.USERNAME)
+        user.send_keys("my first login")
+        user.send_keys(Keys.ENTER)
+        expected_text = "Please fill the required fields"
+        errorMsg = self.driver.find_element(By.ID, 'errorMsg').text
+        assert errorMsg == expected_text, f"Error: expected: {expected_text}, actual: {rs_message}"
+
+        # user.send_keys(Keys.TAB)
+

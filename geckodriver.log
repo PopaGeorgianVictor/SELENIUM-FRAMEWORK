@@ -1927,3 +1927,42 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:8931/devtools/browser/34083fad-0b47-481a-bb6e-8761cf0fab28
 JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
 1670778334920	Marionette	INFO	Stopped listening on port 8940
+1670922901636	geckodriver	INFO	Listening on 127.0.0.1:43637
+1670922904703	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "43638" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileUCNcJU"
+1670922906745	Marionette	INFO	Marionette enabled
+1670922906759	Marionette	INFO	Listening on port 43647
+Read port: 43647
+WebDriver BiDi listening on ws://127.0.0.1:43638
+1670922907262	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileUCNcJU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:43638/devtools/browser/7af0971d-e914-4914-bf8f-f9bea3bff517
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670922918853	Marionette	INFO	Stopped listening on port 43647
+1670923295901	geckodriver	INFO	Listening on 127.0.0.1:43755
+1670923298853	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "43756" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileK65Btn"
+1670923299746	Marionette	INFO	Marionette enabled
+1670923299751	Marionette	INFO	Listening on port 43765
+WebDriver BiDi listening on ws://127.0.0.1:43756
+Read port: 43765
+1670923300411	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileK65Btn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:43756/devtools/browser/75101229-4618-4c88-bdcf-88ce26b0f91e
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670923305239	Marionette	INFO	Stopped listening on port 43765
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 997: Error: Connection is not open.
+1670923319835	geckodriver	INFO	Listening on 127.0.0.1:43798
+1670923322802	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "43799" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileszqr2g"
+1670923323208	Marionette	INFO	Marionette enabled
+1670923323213	Marionette	INFO	Listening on port 43809
+Read port: 43809
+WebDriver BiDi listening on ws://127.0.0.1:43799
+1670923323309	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileszqr2g\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:43799/devtools/browser/f2dd9ad0-0fd0-48d6-bc4a-8db375dddb0f
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670923327288	Marionette	INFO	Stopped listening on port 43809
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
+[Parent 4328, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 997: Error: Connection is not open.
