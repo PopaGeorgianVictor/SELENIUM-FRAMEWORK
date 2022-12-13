@@ -28,7 +28,9 @@ class Keyboard(unittest.TestCase):
         errorMsg = self.driver.find_element(By.ID, 'errorMsg').text
         assert errorMsg == expected_text, f"Error: expected: {expected_text}, actual: {rs_message}"
         user.send_keys(Keys.TAB)
-        pass = self.driver.find_element(*self.PASSWORD)
-        user.send_keys("my first password")
+        password = self.driver.find_element(*self.PASSWORD)
+        password.send_keys("my first password")
+        password.send_keys(Keys.BACKSPACE)
+        password.send_keys("###hacking###")
 
 

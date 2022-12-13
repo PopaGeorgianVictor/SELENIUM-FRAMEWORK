@@ -1966,3 +1966,17 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
 [Parent 4328, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
 JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 997: Error: Connection is not open.
+1670935329402	geckodriver	INFO	Listening on 127.0.0.1:44287
+1670935332392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "44288" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileNFxnrS"
+1670935334854	Marionette	INFO	Marionette enabled
+1670935334868	Marionette	INFO	Listening on port 44297
+Read port: 44297
+WebDriver BiDi listening on ws://127.0.0.1:44288
+1670935335397	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileNFxnrS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44288/devtools/browser/8f3f92fe-dc25-4163-a732-fccdb7286258
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670935344687	Marionette	INFO	Stopped listening on port 44297
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 997: Error: Connection is not open.
