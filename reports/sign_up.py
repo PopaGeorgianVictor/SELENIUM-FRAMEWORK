@@ -11,6 +11,7 @@ class Keyboard(unittest.TestCase):
     USERNAME = (By.ID, "signName")
     PASSWORD = (By.ID, "signPassword")
     EMAIL = (By.ID, "signEmail")
+    SING_UP = (By.CSS_SELECTOR, "input[value='SignUp']")
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -20,3 +21,11 @@ class Keyboard(unittest.TestCase):
 
     def tearDown(self) -> None:
         self.driver.quit()
+
+    def test_empty_fields(self):
+        self.driver.find_element(*self.SING_UP).click()
+        expected_text = "Please fill the required fields"
+        errorMsg = self.driver.find_element(By.ID, 'errorMsg').text
+        assert  assert errorMsg == expected_text, f"Error: expected: {expected_text}, actual: {errorMsg}"
+
+
