@@ -2004,3 +2004,39 @@ DevTools listening on ws://127.0.0.1:44564/devtools/browser/e1f65bb2-8442-4e83-a
 JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
 1670936331663	Marionette	INFO	Stopped listening on port 44573
+1670940556530	geckodriver	INFO	Listening on 127.0.0.1:44844
+1670940559468	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "44845" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilen04BWA"
+1670940562044	Marionette	INFO	Marionette enabled
+1670940562058	Marionette	INFO	Listening on port 44854
+Read port: 44854
+WebDriver BiDi listening on ws://127.0.0.1:44845
+1670940562609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilen04BWA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44845/devtools/browser/72fda22f-a1d5-4a93-b7b7-c15942ca4230
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670940573540	Marionette	INFO	Stopped listening on port 44854
+[Parent 11700, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670940618695	geckodriver	INFO	Listening on 127.0.0.1:44887
+1670940621671	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "44888" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilejTJx4M"
+1670940622179	Marionette	INFO	Marionette enabled
+1670940622185	Marionette	INFO	Listening on port 44897
+Read port: 44897
+WebDriver BiDi listening on ws://127.0.0.1:44888
+1670940622297	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofilejTJx4M\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44888/devtools/browser/19cfabc8-54c1-4e82-a626-a126e1db837c
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670940627215	Marionette	INFO	Stopped listening on port 44897
+1670941273887	geckodriver	INFO	Listening on 127.0.0.1:4609
+1670941276881	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "4610" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileViYdGv"
+1670941277278	Marionette	INFO	Marionette enabled
+1670941277284	Marionette	INFO	Listening on port 4619
+Read port: 4619
+WebDriver BiDi listening on ws://127.0.0.1:4610
+1670941277380	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileViYdGv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:4610/devtools/browser/f255950d-94a8-498b-98fa-0ca7a580ce14
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1670941283108	Marionette	INFO	Stopped listening on port 4619
