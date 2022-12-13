@@ -26,6 +26,6 @@ class Keyboard(unittest.TestCase):
         self.driver.find_element(*self.SING_UP).click()
         expected_text = "Please fill the required fields"
         errorMsg = self.driver.find_element(By.ID, 'errorMsg').text
-        assert  assert errorMsg == expected_text, f"Error: expected: {expected_text}, actual: {errorMsg}"
+        assert errorMsg == expected_text, f"Error: expected: {expected_text}, actual: {errorMsg}"
 
 

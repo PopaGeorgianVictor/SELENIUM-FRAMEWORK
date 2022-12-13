@@ -1,0 +1,13 @@
+1670937133342	geckodriver	INFO	Listening on 127.0.0.1:44662
+1670937136347	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "44663" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileE3fDuW"
+1670937136918	Marionette	INFO	Marionette enabled
+1670937136923	Marionette	INFO	Listening on port 44672
+WebDriver BiDi listening on ws://127.0.0.1:44663
+Read port: 44672
+1670937137317	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileE3fDuW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:44663/devtools/browser/d832654e-ae10-4be8-a39a-79e9372da844
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670937142507	Marionette	INFO	Stopped listening on port 44672
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 693: TypeError: this.tablesData[table] is undefined
