@@ -7,7 +7,7 @@ from selenium.webdriver.firefox.service import Service
 import HTMLTestRunner
 
 
-class Keyboard(unittest.TestCase):
+class Sign_up(unittest.TestCase):
 
     USERNAME = (By.ID, "signName")
     PASSWORD = (By.ID, "signPassword")

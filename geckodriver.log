@@ -2066,3 +2066,15 @@ JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FA
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
 1670942482021	Marionette	INFO	Stopped listening on port 7230
 [Parent 17564, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670942673264	geckodriver	INFO	Listening on 127.0.0.1:7268
+1670942676291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "7269" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofiletFZnk1"
+1670942676675	Marionette	INFO	Marionette enabled
+1670942676681	Marionette	INFO	Listening on port 7278
+Read port: 7278
+WebDriver BiDi listening on ws://127.0.0.1:7269
+1670942676895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofiletFZnk1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:7269/devtools/browser/20d61487-bc0e-41ce-86aa-2f4a900853ec
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://popageorgianvictor.github.io."
+1670942682416	Marionette	INFO	Stopped listening on port 7278
