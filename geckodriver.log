@@ -2247,3 +2247,14 @@ DevTools listening on ws://127.0.0.1:5222/devtools/browser/039ba16d-369d-42ad-a9
 JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
 1671198879282	Marionette	INFO	Stopped listening on port 5231
 [Parent 7228, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1671199096119	geckodriver	INFO	Listening on 127.0.0.1:5298
+1671199099151	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5299" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileRjDYZz"
+1671199099572	Marionette	INFO	Marionette enabled
+1671199099577	Marionette	INFO	Listening on port 5308
+Read port: 5308
+WebDriver BiDi listening on ws://127.0.0.1:5299
+1671199099673	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileRjDYZz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:5299/devtools/browser/468a32e7-0122-4a07-bb18-9843c618d4d1
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 304: NS_ERROR_FAILURE: Should pass a non-null uri
+1671199103075	Marionette	INFO	Stopped listening on port 5308
