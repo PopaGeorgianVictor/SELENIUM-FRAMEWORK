@@ -29,7 +29,6 @@ class Hover(unittest.TestCase):
         action.move_to_element(link).click().perform()
 
 
-
 if __name__ == '__main__' :
     unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
 
