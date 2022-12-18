@@ -31,3 +31,5 @@ class Resize(unittest.TestCase):
         actual = self.driver.get_window_size()
         assert expected == actual , f"Error: expected: {expected}, actual: {actual}"
 
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
