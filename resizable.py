@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
-
+from selenium.webdriver import ActionChains
 
 class Frames(unittest.TestCase):
     RESIZE = (By.XPATH, '//*[@id="resizable"]/div[3]')
@@ -21,3 +21,7 @@ class Frames(unittest.TestCase):
         self.driver.quit()
 
     def test_resizable(self):
+        resizable = self.driver.find_element(*self.RESIZE)
+        ActionChains(self.driver).drag_and_drop_by_offset(resizable, 500, 500).perform()
+        # resize back
+        ActionChains(self.driver).drag_and_drop_by_offset(resizable, -500, -500).perform()
