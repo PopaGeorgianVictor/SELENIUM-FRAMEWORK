@@ -6,7 +6,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver import ActionChains
 
-class Frames(unittest.TestCase):
+class Resize(unittest.TestCase):
     RESIZE = (By.XPATH, '//*[@id="resizable"]/div[3]')
 
 
@@ -29,4 +29,5 @@ class Frames(unittest.TestCase):
 
         expected = {'width': 1550, 'height': 830}
         actual = self.driver.get_window_size()
-        assert expected == actual , f"Error: expected: {expected_text}, actual: {html_alert_text}"
+        assert expected == actual , f"Error: expected: {expected}, actual: {actual}"
+
