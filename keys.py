@@ -24,7 +24,7 @@ class Keyboard(unittest.TestCase):
         user = self.driver.find_element(*self.USERNAME)
         user.send_keys("my first login")
         user.send_keys(Keys.ENTER)
-        expected_text = "Please fill the required fields"
+        expected_text = 'Please fill the required fields'
         errorMsg = self.driver.find_element(By.ID, 'errorMsg').text
         assert errorMsg == expected_text, f"Error: expected: {expected_text}, actual: {errorMsg}"
         user.send_keys(Keys.TAB)

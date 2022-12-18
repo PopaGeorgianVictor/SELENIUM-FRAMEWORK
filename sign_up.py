@@ -25,7 +25,7 @@ class Sign_up(unittest.TestCase):
 
     def test_empty_fields(self):
         self.driver.find_element(*self.SIGN_UP).click()
-        expected_text = "Please fill the required fields"
+        expected_text = 'Please fill the required fields'
         errorMsg = self.driver.find_element(By.ID, 'errorMsg').text
         assert errorMsg == expected_text, f"Error: expected: {expected_text}, actual: {errorMsg}"
 
