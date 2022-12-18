@@ -23,5 +23,10 @@ class Frames(unittest.TestCase):
     def test_resizable(self):
         resizable = self.driver.find_element(*self.RESIZE)
         ActionChains(self.driver).drag_and_drop_by_offset(resizable, 500, 500).perform()
+
         # resize back
         ActionChains(self.driver).drag_and_drop_by_offset(resizable, -500, -500).perform()
+
+        expected = {'width': 1550, 'height': 830}
+        actual = self.driver.get_window_size()
+        assert expected == actual , f"Error: expected: {expected_text}, actual: {html_alert_text}"
