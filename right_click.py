@@ -20,4 +20,4 @@ class Right_Click(unittest.TestCase):
     def tearDown(self) -> None:
         self.driver.quit()
 
-    def test_resizable(self):
+    def test_right_click(self):
