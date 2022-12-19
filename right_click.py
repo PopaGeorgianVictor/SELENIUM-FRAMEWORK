@@ -6,15 +6,15 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver import ActionChains
 
-class Resize(unittest.TestCase):
-    RESIZE = (By.XPATH, '//*[@id="resizable"]/div[3]')
+class Right_Click(unittest.TestCase):
+       CLICK = (By.CSS_SELECTOR, "#contextMenu a")
 
 
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         self.driver.maximize_window()
-        self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/resizable")
+        self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/right_click_menu")
         self.driver.implicitly_wait(2)
 
     def tearDown(self) -> None:
