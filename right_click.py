@@ -7,8 +7,8 @@ from selenium.webdriver.firefox.service import Service
 from selenium.webdriver import ActionChains
 
 class Right_Click(unittest.TestCase):
-       CLICK = (By.CSS_SELECTOR, "#contextMenu a")
 
+    CLICK = (By.CSS_SELECTOR, "#contextMenu a")
 
 
     def setUp(self) -> None:
@@ -21,3 +21,4 @@ class Right_Click(unittest.TestCase):
         self.driver.quit()
 
     def test_right_click(self):
+        ActionChains(self.driver).context_click().perform()
