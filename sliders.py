@@ -25,3 +25,7 @@ class Sliders(unittest.TestCase):
         size = slider.size
         w = size['width']
         ActionChains(self.driver).drag_and_drop_by_offset(slider, w / 2, 0).perform()
+
+
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
