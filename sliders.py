@@ -8,13 +8,13 @@ from selenium.webdriver import ActionChains
 
 class Sliders(unittest.TestCase):
 
-    CLICK = (By.CSS_SELECTOR, "#contextMenu a")
+    SLIDER = (By.ID,"myRange")
 
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         self.driver.maximize_window()
-        self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/right_click_menu")
+        self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/sliders")
         self.driver.implicitly_wait(2)
 
     def tearDown(self) -> None:
