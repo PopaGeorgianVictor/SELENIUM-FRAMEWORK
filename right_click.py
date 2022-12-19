@@ -22,3 +22,8 @@ class Right_Click(unittest.TestCase):
 
     def test_right_click(self):
         ActionChains(self.driver).context_click().perform()
+        self.driver.find_element(*self.CLICK).click()
+        print('I clicked on OVERVIEW')
+
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
