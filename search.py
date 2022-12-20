@@ -21,11 +21,13 @@ class Sliders(unittest.TestCase):
     def tearDown(self) -> None:
         self.driver.quit()
 
-    def test_slide(self):
-        slider = self.driver.find_element(*self.SLIDER)
-        size = slider.size
-        w = size['width']
-        ActionChains(self.driver).drag_and_drop_by_offset(slider, w / 2, 0).perform()
+    def test_search(self):
+        self.driver.find_element(*self.SEARCH_BAR).send_keys('lists')
+
+
+
+
+
 
 
 if __name__ == '__main__' :
