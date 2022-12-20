@@ -28,10 +28,8 @@ class Sliders(unittest.TestCase):
         expected_search = "LISTS"
         assert actual_search == expected_search, f'Error: expected: {expected_search}, actual: {actual_search}'
 
-
-
-
-
+    def test_click(self):
+        self.driver.find_element(*self.ELEM).click()
 
 
 
