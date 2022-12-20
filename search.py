@@ -32,6 +32,5 @@ class Sliders(unittest.TestCase):
         self.driver.find_element(*self.ELEM).click()
 
 
-
 if __name__ == '__main__' :
     unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
