@@ -23,6 +23,11 @@ class Sliders(unittest.TestCase):
 
     def test_search(self):
         self.driver.find_element(*self.SEARCH_BAR).send_keys('lists')
+        elem = self.driver.find_element(*self.ELEM)
+        actual_search = elem.text
+        expected_search = "LISTS"
+        assert actual_search == expected_search, f'Error: expected: {expected_search}, actual: {actual_search}'
+
 
 
 
