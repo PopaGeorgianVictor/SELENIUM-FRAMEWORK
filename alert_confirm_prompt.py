@@ -10,6 +10,7 @@ from selenium.webdriver.firefox.service import Service
 class Alerts(unittest.TestCase):
     HTML_ALERT = (By.CSS_SELECTOR, "div#bootStrapAlertExample button")
     HTML_ALERT_TEXT = (By.ID, "bootStrapAlert")
+    HTML_ALERT_CLOSE = (By.CSS_SELECTOR, '.btn-close')
     JS_ALERT = (By.CSS_SELECTOR, "div#jsAlertExample button")
     JS_CONFIRM = (By.CSS_SELECTOR, "div#jsConfirmExample button")
     JS_PROMPT = (By.CSS_SELECTOR, "div#jsPromptExample button")
@@ -29,6 +30,7 @@ class Alerts(unittest.TestCase):
         html_alert_text = self.driver.find_element(*self.HTML_ALERT_TEXT).text
         expected_text = "This is alert using just html."
         assert html_alert_text == expected_text, f"Error: expected: {expected_text}, actual: {html_alert_text}"
+        self.driver.find_element(*self.HTML_ALERT_CLOSE).click()
 
     def test_js_alert_accept(self):
         self.driver.find_element(*self.JS_ALERT).click()
