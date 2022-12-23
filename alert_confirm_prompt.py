@@ -13,7 +13,9 @@ class Alerts(unittest.TestCase):
     HTML_ALERT_CLOSE = (By.CSS_SELECTOR, '.btn-close')
     JS_ALERT = (By.CSS_SELECTOR, "#jsAlertExample button")
     JS_CONFIRM = (By.CSS_SELECTOR, "#jsConfirmExample button")
+    RS_CONFIRM = (By.ID, 'userResponse1')
     JS_PROMPT = (By.CSS_SELECTOR, "#jsPromptExample button")
+    RS_PROMPT = (By.ID, 'userResponse2')
     INSERTED_TEXT = "test"
 
     def setUp(self) -> None:
@@ -41,22 +43,22 @@ class Alerts(unittest.TestCase):
         self.driver.find_element(*self.JS_CONFIRM).click()
         js_confirm = self.driver.switch_to.alert
         js_confirm.accept()
-        rs_message = self.driver.find_element(By.ID, 'userResponse1').text
+        rs_message = self.driver.find_element(*self.RS_CONFIRM).text
         assert rs_message == 'Great! You will love it!', "Wrong message after accepting"
 
     def test_js_confirm_cancel_alert(self):
         self.driver.find_element(*self.JS_CONFIRM).click()
         js_confirm = self.driver.switch_to.alert
         js_confirm.dismiss()
-        rs_message = self.driver.find_element(By.ID, 'userResponse1').text
-        assert rs_message == "Too bad!!! You would've loved it!", "Wrong message after accepting"
+        rs_message = self.driver.find_element(By.ID, *self.RS_CONFIRM).text
+        assert rs_message == "Too bad!!! You would've loved it!", "Wrong message after canceling"
 
     def test_js_prompt_accept_alert_with_text(self):
         self.driver.find_element(*self.JS_PROMPT).click()
         js_prompt = self.driver.switch_to.alert
         js_prompt.send_keys(self.INSERTED_TEXT)
         js_prompt.accept()
-        rs_message = self.driver.find_element(By.ID, 'userResponse2').text
+        rs_message = self.driver.find_element(*self.RS_PROMPT).text
         expected_text = f"You have entered: {self.INSERTED_TEXT}"
         assert rs_message == expected_text, f"Error: expected: {expected_text}, actual: {rs_message}"
 
@@ -64,7 +66,7 @@ class Alerts(unittest.TestCase):
         self.driver.find_element(*self.JS_PROMPT).click()
         js_prompt = self.driver.switch_to.alert
         js_prompt.accept()
-        rs_message = self.driver.find_element(By.ID, 'userResponse2').text
+        rs_message = self.driver.find_element(*self.RS_PROMPT).text
         expected_text = f"You have entered: none"
         assert rs_message == expected_text, f"Error: expected: {expected_text}, actual: {rs_message}"
 
