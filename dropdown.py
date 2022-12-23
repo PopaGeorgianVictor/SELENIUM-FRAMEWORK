@@ -1,6 +1,7 @@
-
+import time
 import unittest
 import HTMLTestRunner
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from selenium import webdriver
@@ -39,15 +40,19 @@ class Dropdown(unittest.TestCase):
         for option in all_options:
             print(option.text)
 
-
-    def test_select_using_css(self):
+    def test_css_all_option(self):
         self.driver.find_element(*self.DROPDOWN_CSS).click()
         self.driver.find_element(*self.OPTION_CSS).click()
+        time.sleep(3)
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        print("Second window title = " + self.driver.title)
 
-    def test_css_all_option(self):
-        options = self.driver.find_elements(*self.DROPDOWN_CSS)
-        for option in options:
-            print(option.text)
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, "span[title='PORTOFOLIO']")
+            print('Element exist')
+
+        except NoSuchElementException:
+            print("Element does not exist")
 
 
 if __name__ == '__main__' :
