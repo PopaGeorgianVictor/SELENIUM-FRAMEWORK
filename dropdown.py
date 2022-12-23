@@ -11,7 +11,7 @@ from selenium.webdriver.firefox.service import Service
 class Dropdown(unittest.TestCase):
     DROPDOWN_CLASS= (By.ID, 'coding-language-select')
     DROPDOWN_CSS = (By.ID, "dropdownMenuButton")
-    OPTION_CSS = (By.XPATH, '//*[@id="dropdowns"]/div[2]/div/ul/li[4]/a')
+    OPTION_CSS = (By.LINK_TEXT, 'PORTOFOLIO')
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -26,10 +26,17 @@ class Dropdown(unittest.TestCase):
         my_dropdown = self.driver.find_element(*self.DROPDOWN_CLASS)
         dropdown_object = Select(my_dropdown)
         dropdown_object.select_by_value('Python')
+        dropdown_object.select_by_value('Java')
+        dropdown_object.select_by_value('PHP')
+        dropdown_object.select_by_value('C#')
+        dropdown_object.select_by_value('SQL')
 
     def test_class_all_option(self):
-        options = self.driver.find_elements(*self.DROPDOWN_CLASS)
-        for option in options:
+        my_dropdown = self.driver.find_element(*self.DROPDOWN_CLASS).click()
+        dropdown_object = Select(my_dropdown)
+
+        all_options = dropdown_object.options
+        for option in all_options:
             print(option.text)
 
 
