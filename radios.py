@@ -20,10 +20,17 @@ class Radios(unittest.TestCase):
     def tearDown(self) -> None:
         self.driver.quit()
 
+
     def test_default_is_selected(self):
         expected_default_value = 'rock fm'
         default_element = self.driver.find_element(By.CSS_SELECTOR, self.LOCATOR_BY_VALUE.format(value=expected_default_value))
         assert default_element.is_selected(), f"The default value of {expected_default_value} is not selected."
+
+    def test_click_all_btn(self):
+        self.driver.find_element(By.CSS_SELECTOR, "input[value='magic fm']").click()
+        self.driver.find_element(By.CSS_SELECTOR, "input[value='radio galaxy']").click()
+        self.driver.find_element(By.CSS_SELECTOR, "input[value='europa fm']").click()
+        self.driver.find_element(By.CSS_SELECTOR, "input[value='rock fm']").click()
 
     def test_verify_number_of_radio_btn(self):
         expected_values = ['magic fm','radio galaxy','europa fm','rock fm']
