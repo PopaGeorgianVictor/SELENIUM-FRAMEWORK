@@ -1,6 +1,7 @@
 
 import unittest
 import HTMLTestRunner
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
@@ -33,6 +34,13 @@ class Alerts(unittest.TestCase):
         expected_text = "This is alert using just html."
         assert html_alert_text == expected_text, f"Error: expected: {expected_text}, actual: {html_alert_text}"
         self.driver.find_element(*self.HTML_ALERT_CLOSE).click()
+
+        try:
+            self.driver.find_element(*self.HTML_ALERT_CLOSE)
+            print('Element still exist')
+
+        except NoSuchElementException:
+            print("Element does not exist, closed successfully")
 
     def test_js_alert_accept(self):
         self.driver.find_element(*self.JS_ALERT).click()
