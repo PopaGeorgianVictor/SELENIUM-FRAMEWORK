@@ -47,6 +47,7 @@ class Alerts(unittest.TestCase):
         js_alert = self.driver.switch_to.alert
         js_alert.accept()
 
+
     def test_js_confirm_accept_alert(self):
         self.driver.find_element(*self.JS_CONFIRM).click()
         js_confirm = self.driver.switch_to.alert

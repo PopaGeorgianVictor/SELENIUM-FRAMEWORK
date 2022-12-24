@@ -26,15 +26,11 @@ class Radios(unittest.TestCase):
         assert default_element.is_selected(), f"The default value of {expected_default_value} is not selected."
 
     def test_verify_number_of_radio_btn(self):
-        expected_values = ['21-40', '41-60', '61-80', '81+']
+        expected_values = ['magic fm','radio galaxy','europa fm','rock fm']
         all_radios = self.driver.find_elements(*self.RADIOS)
         assert len(all_radios) == len(expected_values), "the number of radios does not match the expected." \
                                                         "Expected: {}, Actual: {}".format(len(expected_values),
                                                                                           len(all_radios))
-
-
-
-
 
 
 if __name__ == '__main__' :
