@@ -12,6 +12,8 @@ class Radios(unittest.TestCase):
     RADIOS = (By.NAME, 'radio-stations')
     BTN1 = (By.CSS_SELECTOR, "input[value='magic fm']")
     BTN2 = (By.CSS_SELECTOR, "input[value='radio galaxy']")
+    BTN3 = (By.CSS_SELECTOR, "input[value='europa fm']")
+    BTN4 = (By.CSS_SELECTOR, "input[value='rock fm']")
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -40,6 +42,18 @@ class Radios(unittest.TestCase):
             print("Radio Galaxy button is clickable")
         except WebDriverException:
             print("Radio Galaxy button is not clickable")
+
+        try:
+            self.driver.find_element(*self.BTN3).click()
+            print("Europa FM  button is clickable")
+        except WebDriverException:
+            print("Europa FM  button is not clickable")
+
+        try:
+            self.driver.find_element(*self.BTN4).click()
+            print("Rock FM  button is clickable")
+        except WebDriverException:
+            print("Rock FM button is not clickable")
 
     def test_verify_number_of_radio_btn(self):
         expected_values = ['magic fm','radio galaxy','europa fm','rock fm']
