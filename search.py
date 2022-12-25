@@ -9,7 +9,7 @@ from selenium.webdriver.firefox.service import Service
 class Search(unittest.TestCase):
 
     SEARCH_BAR = (By.ID,"myInput")
-    ELEM = (By.XPATH, "//a[normalize-space()='LISTS']")
+    ELEM = (By.LINK_TEXT, "LISTS")
 
 
     def setUp(self) -> None:
