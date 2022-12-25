@@ -1,5 +1,7 @@
+
 import unittest
 import HTMLTestRunner
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
@@ -30,6 +32,14 @@ class Search(unittest.TestCase):
 
     def test_click(self):
         self.driver.find_element(*self.ELEM).click()
+        print("Second window title = " + self.driver.title)
+
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, "a[title='Python Tutorial']")
+            print('Element exist')
+
+        except NoSuchElementException:
+            print("Element does not exist")
 
 
 if __name__ == '__main__' :
