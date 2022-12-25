@@ -6,7 +6,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 
 
-class Sliders(unittest.TestCase):
+class Search(unittest.TestCase):
 
     SEARCH_BAR = (By.ID,"myInput")
     ELEM = (By.XPATH, "//a[normalize-space()='LISTS']")
