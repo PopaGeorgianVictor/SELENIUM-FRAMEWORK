@@ -1,6 +1,7 @@
-
+import  time
 import unittest
 import HTMLTestRunner
+from selenium.common import NoSuchElementException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium import webdriver
@@ -9,8 +10,8 @@ from selenium.webdriver.firefox.service import Service
 
 class Hover(unittest.TestCase):
     MENU = (By.CSS_SELECTOR,"#container a")
-    PORTOFOLIO = (By.XPATH, "//a[contains(text(),'Portofolio')]")
-
+    PORTOFOLIO = (By.LINK_TEXT, "Portofolio")
+    ELEM = (By.LINK_TEXT, "PORTOFOLIO")
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -27,6 +28,16 @@ class Hover(unittest.TestCase):
         action.move_to_element(menu).perform()
         link =  self.driver.find_element(*self.PORTOFOLIO)
         action.move_to_element(link).click().perform()
+        time.sleep(3)
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        print("Second window title = " + self.driver.title)
+
+        try:
+            self.driver.find_element(*self.ELEM)
+            print('Element exist')
+
+        except NoSuchElementException:
+            print("Element does not exist")
 
 
 if __name__ == '__main__' :
