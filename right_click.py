@@ -22,6 +22,7 @@ class Right_Click(unittest.TestCase):
     def tearDown(self) -> None:
         self.driver.quit()
 
+
     def test_right_click(self):
         ActionChains(self.driver).context_click().perform()
         self.driver.find_element(*self.CLICK).click()
@@ -36,6 +37,7 @@ class Right_Click(unittest.TestCase):
 
         except NoSuchElementException:
             print("Element does not exist")
+
 
 if __name__ == '__main__' :
     unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
