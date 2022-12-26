@@ -11887,3 +11887,34 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Pha
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1672062494606	geckodriver	INFO	Listening on 127.0.0.1:8551
+1672062497656	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8552" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileBVd0ei"
+1672062499872	Marionette	INFO	Marionette enabled
+1672062499884	Marionette	INFO	Listening on port 8561
+Read port: 8561
+WebDriver BiDi listening on ws://127.0.0.1:8552
+1672062500343	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileBVd0ei\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8552/devtools/browser/7bcce544-77c9-4110-92ef-4b73b5c4a7af
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1943: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1672062634548	Marionette	INFO	Stopped listening on port 8561
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1672062689855	geckodriver	INFO	Listening on 127.0.0.1:8686
+1672062692875	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8687" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileJ46PpS"
+1672062693530	Marionette	INFO	Marionette enabled
+1672062693534	Marionette	INFO	Listening on port 8696
+Read port: 8696
+WebDriver BiDi listening on ws://127.0.0.1:8687
+1672062693629	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\popag\\AppData\\Local\\Temp\\rust_mozprofileJ46PpS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:8687/devtools/browser/6ac9bafb-235c-476a-8a4d-18b155b29f4d
+JavaScript error: resource://gre/modules/URIFixup.sys.mjs, line 302: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://www.javatpoint.com/python-tutorial, line 1943: TypeError: redirectButton is null
+JavaScript error: , line 0: uncaught exception: No tcf-api
+JavaScript error: , line 0: uncaught exception: No tcf-api
+1672062827344	Marionette	INFO	Stopped listening on port 8696
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "Sqlite.sys.mjs: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"

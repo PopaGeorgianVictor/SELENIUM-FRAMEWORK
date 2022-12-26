@@ -1,5 +1,7 @@
+import time
 import unittest
 import HTMLTestRunner
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
@@ -10,6 +12,7 @@ class Frames(unittest.TestCase):
     WITHOUT_FRAME = (By.ID, 'btnOutFrame')
     OF_FRAME = (By.CSS_SELECTOR, "div[id='link'] li:nth-child(1) a:nth-child(1)")
     FRAMES = (By.TAG_NAME,'iframe')
+
 
 
     def setUp(self) -> None:
@@ -31,6 +34,15 @@ class Frames(unittest.TestCase):
         self.driver.switch_to.frame('myFrame1')
         self.driver.find_element(*self.OF_FRAME).click()
         print('I clicked in frame')
+        time.sleep(3)
+        print("Second window title = " + self.driver.title)
+
+        try:
+            self.driver.find_element(*self.OF_FRAME)
+            print('Element exist')
+
+        except NoSuchElementException:
+            print("Element does not exist")
 
     def test_len_frames(self):
         frames = self.driver.find_elements(*self.FRAMES)
