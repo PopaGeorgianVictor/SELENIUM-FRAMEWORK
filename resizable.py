@@ -8,7 +8,7 @@ from selenium.webdriver import ActionChains
 
 class Resize(unittest.TestCase):
     RESIZE = (By.XPATH, '//*[@id="resizable"]/div[3]')
-
+    ELEM_RESIZABLE = (By.ID, 'resizable')
 
 
     def setUp(self) -> None:
@@ -21,8 +21,15 @@ class Resize(unittest.TestCase):
         self.driver.quit()
 
     def test_resizable(self):
+        elem = self.driver.find_element(*self.ELEM_RESIZABLE)
+        print("Original size is", elem.size)
         resizable = self.driver.find_element(*self.RESIZE)
         ActionChains(self.driver).drag_and_drop_by_offset(resizable, 500, 500).perform()
+        print("After resize is", elem.size)
+
+        expected_size = {'height': 619.0, 'width': 619.0}
+        actual_size = elem.size
+        assert expected_size == actual_size, f"Error: expected: {expected_size}, actual: {actual_size}"
 
         # resize back
         ActionChains(self.driver).drag_and_drop_by_offset(resizable, -500, -500).perform()
