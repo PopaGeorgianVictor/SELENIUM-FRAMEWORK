@@ -27,13 +27,17 @@ class Resize(unittest.TestCase):
         ActionChains(self.driver).drag_and_drop_by_offset(resizable, 500, 500).perform()
         print("After resize is", elem.size)
 
-        expected_size = {'height': 619.0, 'width': 619.0}
+        expected_size = {'height': 619, 'width': 619}
         actual_size = elem.size
         assert expected_size == actual_size, f"Error: expected: {expected_size}, actual: {actual_size}"
 
-        # resize back
+    def test_resize_back(self):
+        elem = self.driver.find_element(*self.ELEM_RESIZABLE)
+        resizable = self.driver.find_element(*self.RESIZE)
         ActionChains(self.driver).drag_and_drop_by_offset(resizable, -500, -500).perform()
-
+        expected_size = {'height': 119, 'width': 119}
+        actual_size = elem.size
+        assert expected_size == actual_size, f"Error: expected: {expected_size}, actual: {actual_size}"
 
 if __name__ == '__main__' :
     unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
