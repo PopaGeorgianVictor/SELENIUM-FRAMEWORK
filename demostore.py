@@ -1,3 +1,4 @@
+import time
 import unittest
 import HTMLTestRunner
 from selenium.common import NoSuchElementException
@@ -13,7 +14,7 @@ class Login(unittest.TestCase):
     PASSWORD = (By.ID, "reg_password")
     REGISTER_BTN = (By.NAME, "register")
     ERROR_TEXT = (By.XPATH,"//div[@id='content']//li[1]")
-    PASSWORD_HINT = (By.CSS_SELECTOR, ".woocommerce-password-hint")
+    PASSWORD_HINT = (By.XPATH, "//small[@class='woocommerce-password-hint']")
     DASHBOARD = (By.LINK_TEXT, "Dashboard")
 
     def setUp(self) -> None:
@@ -33,6 +34,13 @@ class Login(unittest.TestCase):
 
         except NoSuchElementException:
             print("Registration has not been completed")
+
+    def test_password_hint(self):
+        self.driver.find_element(*self.PASSWORD).send_keys("abc")
+        hint = self.driver.find_element(*self.PASSWORD_HINT).text
+        time.sleep(5)
+        expected_text = 'Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & ).'
+        assert hint == expected_text, f"Error: expected: {expected_text}, actual: {hint}"
 
 if __name__ == '__main__' :
     unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
