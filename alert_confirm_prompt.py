@@ -14,7 +14,7 @@ class Alerts(unittest.TestCase):
     HTML_ALERT_CLOSE = (By.CSS_SELECTOR, '.btn-close')
     JS_ALERT = (By.CSS_SELECTOR, "#jsAlertExample button")
     JS_CONFIRM = (By.CSS_SELECTOR, "#jsConfirmExample button")
-    RS_CONFIRM = (By.ID, 'userResponse1')
+    RS_CONFIRM = (By.ID, "userResponse1")
     JS_PROMPT = (By.CSS_SELECTOR, "#jsPromptExample button")
     RS_PROMPT = (By.ID, 'userResponse2')
     INSERTED_TEXT = "test"
