@@ -37,7 +37,7 @@ class Alerts(unittest.TestCase):
 
         try:
             self.driver.find_element(*self.HTML_ALERT_CLOSE)
-            print('Element still exist')
+            print("Element still exist")
 
         except NoSuchElementException:
             print("Element does not exist, closed successfully")
