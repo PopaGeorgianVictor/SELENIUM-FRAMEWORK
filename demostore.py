@@ -33,3 +33,6 @@ class Login(unittest.TestCase):
 
         except NoSuchElementException:
             print("Registration has not been completed")
+
+if __name__ == '__main__' :
+    unittest.main(testRunner=HTMLTestRunner.HTMLTestRunner(output='D:/selenium project/framework/reports'))
