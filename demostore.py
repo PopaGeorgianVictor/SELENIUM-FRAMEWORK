@@ -1,5 +1,6 @@
 import unittest
 import HTMLTestRunner
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
@@ -13,6 +14,7 @@ class Login(unittest.TestCase):
     REGISTER_BTN = (By.NAME, "register")
     ERROR_TEXT = (By.XPATH,"//div[@id='content']//li[1]")
     PASSWORD_HINT = (By.CSS_SELECTOR, ".woocommerce-password-hint")
+    DASHBOARD = (By.LINK_TEXT, "Dashboard")
 
     def setUp(self) -> None:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
@@ -21,6 +23,13 @@ class Login(unittest.TestCase):
         self.driver.implicitly_wait(2)
 
     def test_register(self):
-        self.driver.find_element(*self.EMAIL).send_keys("test123@gmail.com")
-        self.driver.find_element(*self.PASSWORD).send_keys("6KTPNqcwUAe7PAD")
+        self.driver.find_element(*self.EMAIL).send_keys("adress@gmail.com")
+        self.driver.find_element(*self.PASSWORD).send_keys("6KTPNqcwU#$Ae7PAD")
         self.driver.find_element(*self.REGISTER_BTN).click()
+
+        try:
+            self.driver.find_element(*self.DASHBOARD)
+            print('Registered successfully')
+
+        except NoSuchElementException:
+            print("Registration has not been completed")
