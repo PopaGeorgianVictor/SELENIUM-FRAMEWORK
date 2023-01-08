@@ -20,5 +20,7 @@ class Login(unittest.TestCase):
         self.driver.get("http://demostore.supersqa.com/my-account/")
         self.driver.implicitly_wait(2)
 
-    def test_insert_email(self):
+    def test_register(self):
         self.driver.find_element(*self.EMAIL).send_keys("test123@gmail.com")
+        self.driver.find_element(*self.PASSWORD).send_keys("6KTPNqcwUAe7PAD")
+        self.driver.find_element(*self.REGISTER_BTN).click()
