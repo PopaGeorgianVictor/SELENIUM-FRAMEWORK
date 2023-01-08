@@ -9,7 +9,7 @@ from selenium.common.exceptions import WebDriverException
 
 class Radios(unittest.TestCase):
     LOCATOR_BY_VALUE = 'input[name="radio-stations"][value="{value}"]'
-    RADIOS = (By.NAME, 'radio-stations')
+    RADIOS = (By.NAME, "radio-stations")
     BTN1 = (By.CSS_SELECTOR, "input[value='magic fm']")
     BTN2 = (By.CSS_SELECTOR, "input[value='radio galaxy']")
     BTN3 = (By.CSS_SELECTOR, "input[value='europa fm']")
