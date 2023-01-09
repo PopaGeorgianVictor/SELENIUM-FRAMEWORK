@@ -14,7 +14,7 @@ class Login(unittest.TestCase):
     PASSWORD = (By.ID, "reg_password")
     REGISTER_BTN = (By.NAME, "register")
     ERROR_TEXT = (By.XPATH,"//div[@id='content']//li[1]")
-    PASSWORD_HINT = (By.XPATH, ".woocommerce-password-hint")
+    PASSWORD_HINT = (By.CSS_SELECTOR, ".woocommerce-password-hint")
     DASHBOARD = (By.LINK_TEXT, "Dashboard")
 
     def setUp(self) -> None:
