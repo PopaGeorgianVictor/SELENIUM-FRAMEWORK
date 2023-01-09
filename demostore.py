@@ -24,7 +24,7 @@ class Login(unittest.TestCase):
         self.driver.implicitly_wait(2)
 
     def test_register(self):
-        self.driver.find_element(*self.EMAIL).send_keys("adress@gmail.com")
+        self.driver.find_element(*self.EMAIL).send_keys("adresss@gmail.com")
         self.driver.find_element(*self.PASSWORD).send_keys("6KTPNqcwU#$Ae7PAD")
         self.driver.find_element(*self.REGISTER_BTN).click()
 
@@ -36,9 +36,10 @@ class Login(unittest.TestCase):
             print("Registration has not been completed")
 
     def test_password_hint(self):
-        self.driver.find_element(*self.PASSWORD).send_keys("abc")
-        hint = self.driver.find_element(*self.PASSWORD_HINT).text
+        self.driver.find_element(*self.EMAIL).send_keys("a071@gmail.com")
+        self.driver.find_element(*self.PASSWORD).send_keys("1")
         time.sleep(5)
+        hint = self.driver.find_element(*self.PASSWORD_HINT).text
         expected_text = 'Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & ).'
         assert hint == expected_text, f"Error: expected: {expected_text}, actual: {hint}"
 
