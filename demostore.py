@@ -14,7 +14,7 @@ class Login(unittest.TestCase):
     PASSWORD = (By.ID, "reg_password")
     REGISTER_BTN = (By.NAME, "register")
     ERROR_TEXT = (By.XPATH,"//div[@id='content']//li[1]")
-    PASSWORD_HINT = (By.XPATH, "//small[@class='woocommerce-password-hint']")
+    PASSWORD_HINT = (By.XPATH, ".woocommerce-password-hint")
     DASHBOARD = (By.LINK_TEXT, "Dashboard")
 
     def setUp(self) -> None:
@@ -37,7 +37,7 @@ class Login(unittest.TestCase):
 
     def test_password_hint(self):
         self.driver.find_element(*self.EMAIL).send_keys("a071@gmail.com")
-        self.driver.find_element(*self.PASSWORD).send_keys("1")
+        self.driver.find_element(*self.PASSWORD).send_keys("1a")
         time.sleep(5)
         hint = self.driver.find_element(*self.PASSWORD_HINT).text
         expected_text = 'Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & ).'
