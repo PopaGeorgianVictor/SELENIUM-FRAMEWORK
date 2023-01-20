@@ -1,7 +1,7 @@
 import time
 import unittest
 import HTMLTestRunner
-from selenium.common import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from selenium import webdriver

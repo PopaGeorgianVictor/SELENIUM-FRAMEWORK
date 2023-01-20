@@ -1,7 +1,7 @@
 import time
 import unittest
 import HTMLTestRunner
-from selenium.common import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
