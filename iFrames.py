@@ -5,7 +5,6 @@ from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.firefox.service import Service
 
 
 class Frames(unittest.TestCase):
@@ -16,7 +15,7 @@ class Frames(unittest.TestCase):
 
 
     def setUp(self) -> None:
-        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         self.driver.maximize_window()
         self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/iFrame")
         self.driver.implicitly_wait(2)
