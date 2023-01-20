@@ -20,7 +20,7 @@ class Alerts(unittest.TestCase):
     INSERTED_TEXT = "test"
 
     def setUp(self) -> None:
-        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         self.driver.maximize_window()
         self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/alert_confirm_prompt")
         self.driver.implicitly_wait(2)

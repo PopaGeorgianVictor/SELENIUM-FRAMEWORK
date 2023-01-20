@@ -5,7 +5,7 @@ from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.firefox.service import Service
+
 
 
 class Login(unittest.TestCase):
@@ -18,13 +18,13 @@ class Login(unittest.TestCase):
     DASHBOARD = (By.LINK_TEXT, "Dashboard")
 
     def setUp(self) -> None:
-        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         self.driver.maximize_window()
         self.driver.get("http://demostore.supersqa.com/my-account/")
         self.driver.implicitly_wait(2)
 
     def test_register(self):
-        self.driver.find_element(*self.EMAIL).send_keys("adresss@gmail.com")
+        self.driver.find_element(*self.EMAIL).send_keys("adreasds@gmail.com")
         self.driver.find_element(*self.PASSWORD).send_keys("6KTPNqcwU#$Ae7PAD")
         self.driver.find_element(*self.REGISTER_BTN).click()
 

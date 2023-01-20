@@ -13,7 +13,7 @@ class Checkbox(unittest.TestCase):
     ALL_CHECKBOXES = (By.NAME, 'age-group-checkbox')
 
     def setUp(self) -> None:
-        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         self.driver.maximize_window()
         self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/checkbox")
         self.driver.implicitly_wait(2)
