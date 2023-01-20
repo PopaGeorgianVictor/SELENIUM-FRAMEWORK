@@ -4,7 +4,6 @@ import HTMLTestRunner
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.firefox.service import Service
 from selenium.common.exceptions import WebDriverException
 
 class Radios(unittest.TestCase):
@@ -16,7 +15,7 @@ class Radios(unittest.TestCase):
     BTN4 = (By.CSS_SELECTOR, "input[value='rock fm']")
 
     def setUp(self) -> None:
-        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         self.driver.maximize_window()
         self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/radio_btn")
         self.driver.implicitly_wait(2)
