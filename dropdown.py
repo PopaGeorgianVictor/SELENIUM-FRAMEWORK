@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.firefox.service import Service
 
 
 class Dropdown(unittest.TestCase):
@@ -15,7 +14,7 @@ class Dropdown(unittest.TestCase):
     OPTION_CSS = (By.LINK_TEXT, 'PORTOFOLIO')
 
     def setUp(self) -> None:
-        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+        self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         self.driver.maximize_window()
         self.driver.get("https://popageorgianvictor.github.io/PUBLISHED-WEBPAGES/dropdown")
         self.driver.implicitly_wait(2)

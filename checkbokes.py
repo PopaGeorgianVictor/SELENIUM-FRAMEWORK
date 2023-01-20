@@ -4,7 +4,7 @@ import HTMLTestRunner
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.firefox.service import Service
+
 
 class Checkbox(unittest.TestCase):
     TO_SELECT_VALUE = '21-40'
