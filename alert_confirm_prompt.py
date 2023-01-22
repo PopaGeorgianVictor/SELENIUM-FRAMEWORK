@@ -6,8 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
 
-
-
 class Alerts(unittest.TestCase):
     HTML_ALERT = (By.CSS_SELECTOR, "#bootStrapAlertExample button")
     HTML_ALERT_TEXT = (By.ID, "bootStrapAlert")
