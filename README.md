@@ -5,6 +5,8 @@
 
 ## Cheat Sheet
 <i>
+https://docs.python.org
+
 https://selenium-python.readthedocs.io
   
 https://www.selenium.dev
