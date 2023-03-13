@@ -6,4 +6,6 @@
 ## Cheat Sheet
 <i>
 https://selenium-python.readthedocs.io
+  
+https://www.selenium.dev
   </i>
